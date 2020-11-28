@@ -1,5 +1,15 @@
+body{
+    font-family: 'Quicksand', sans-serif;
+    background-image: url("../img/142544.jpg");
+    background-repeat: no-repeat;    
+    background-size: 100%;
+
+}
+
+
 .bigshow{
-    background-color: pink;
+    background-color: rgb(15, 80, 155);
+    
 }
 
 
@@ -17,10 +27,25 @@
     
 } */
 .nav-link{
-    color:black;
+    color:white;
    
+}
+.nav-link:hover{
+    color: black;
 }
 
 .jumbotron{
     margin-bottom: 0rem;
+}
+
+.cover {
+
+width: 100%;
+height: 100%;
+}
+
+#aboutMe{
+    display:none;
+    color: black;
+    background-color: lightblue;
 }

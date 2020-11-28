@@ -2,39 +2,131 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Sierra</title>
-        <meta name="Sierra" content="photo gallery">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/my_css.css">
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Sierra</title>
+    <meta name="Sierra" content="photo gallery" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+    <link rel="stylesheet" href="css/my_css.css" />
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
 
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+    <div class="jumbotron jumbotron-fluid bigshow">
+      <div class="container headline text-center">
+        <h1 class="display-1 header animate__animated animate__backInDown">Sierra</h1>
+      </div>
+       <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">SlideShow</a>
+      </li>
+      <li class="nav-item2">
+        <a class="nav-link"  id="showAboutMe" href="#">About Me</a>
+      </li>
+    </ul>
+    </div>
+   
+<br> <br>
+    <div class="container" id="aboutMe"> <!-- about area  will be invisible in beginning-->
+        <p>
+            <h1> About Me </h1>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis ultricies diam. Donec laoreet odio eget justo congue pretium. Quisque rutrum, lectus ut pharetra tempor, dolor nulla pulvinar est, ac egestas felis turpis sit amet nisi. Mauris rhoncus iaculis quam ac interdum. Vivamus ut pellentesque libero, ac congue ante. Maecenas leo nisi, vehicula eu suscipit id, elementum non mi. Duis id mauris in risus pellentesque egestas ullamcorper eu justo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            <br><br>
+            Aliquam lobortis vehicula metus, ac scelerisque odio gravida eget. Nam porta iaculis dapibus. Nunc condimentum dolor nec leo consectetur condimentum eu sit amet urna. Integer consectetur varius eleifend. Maecenas feugiat ac felis ac gravida. Etiam mollis egestas sem ac mollis. Nunc dolor magna, lacinia vitae condimentum sed, dignissim a sapien. Aliquam viverra felis lectus. Mauris maximus cursus purus. Etiam rhoncus sit amet ex eu fringilla. Praesent laoreet mi nisi, sed suscipit dolor iaculis vel. Ut elementum interdum erat, at venenatis metus lobortis non. Quisque ultrices nibh eget ligula ultricies, nec facilisis mauris consequat. Nulla in leo et libero eleifend dapibus non nec arcu. Sed porttitor vel nisi eget vestibulum. Pellentesque vulputate, metus in maximus maximus, ante ante vestibulum elit, a imperdiet libero justo sed odio.
+            <span  > 
+                <button type="button" class="btn btn-dark" id="close">X</button>
+            </span>
 
-        <div class= "jumbotron jumbotron-fluid bigshow">
-           <div class="container headline text-center">
-             <hr1 class = "display-1 header">SIERRA</hr1>
-           </div>          
+
+        </p>
+    </div>
+      
+
+
+
+    <div class=" container images" id="pics">
+      <div class="row justify-content-center">
+        <div class="col-6">
+         <img class="cover " id="pic0" src="img/CC_BlackShirt.JPG">
+
         </div>
-         <ul class="nav">
-                <li class="nav-item ">
-                    <a class="nav-link " href="#">SlideShow</a>
-                </li>
-                <li class="nav-item2">
-                    <a class="nav-link" href="#">About Me</a>
-                </li>
-            </ul>
-          
-        
-        <script src="js/jquery-3.4.1.min.js" async defer></script>
-        <script src="js/bootstrap.min.js" ></script>
-        <script src="js/my_js.js" ></script>
-    </body>
+      </div>
+<br>
+
+    </div>
+    <div class="container" id="SlideShow">
+      <div class="row  no-gutters ccSlide" >
+        <button type="button" class="btn btn-info prevBtn">Prev</button>
+        <div class ="col-sm">
+        <a href="#">   
+         <img class="cover" id="pic1" src="img/100_0786.JPG"  >
+         </a> 
+        </div>
+        <div class ="col-sm">
+        <a href="#">    
+         <img class="cover" id="pic2" src="img/TheGirls1.jpg" >
+         </a>
+        </div>
+        <div class ="col-sm">
+            <a href="#">    
+         <img class="cover" id="pic3" src="img/Sierra Kayden Zion.JPG" >
+            </a>
+       </div>
+       <div class ="col-sm">
+        <a href="#">   
+        <img class="cover" id="pic4"  src="img/CC&Aya1.JPG" >
+        </a>
+      </div>
+      <div class ="col-sm">
+        <a href="#">   
+        <img class="cover" id="pic5" src="img/100_0764.JPG" >        
+        </a> 
+      </div>
+      <div class ="col-sm">
+        <a href="#">   
+        <img class="cover" id="pic6" src="img/cc_sid_monie.jpg" >
+        </a> 
+      </div>
+      <div class ="col-sm">
+        <a href="#">   
+        <img class="cover" id="pic7" src="img/cc590.jpg" >
+        </a> 
+      </div>
+      <div class ="col-sm">
+        <a href="#">   
+        <img class="cover" id="pic8" src="img/cc591.jpg" >
+        </a> 
+      </div>
+      <div class ="col-sm">
+        <a href="#">   
+        <img class="cover" id="pic9" src="img/cc592.jpg" >
+        </a> 
+      </div>
+
+        <button type="button" class="btn btn-info nextBtn">Next</button>
+      </div>
+
+<br>      
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js" async defer></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/my_js.js"></script>
+  </body>
 </html>
